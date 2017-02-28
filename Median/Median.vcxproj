@@ -113,6 +113,9 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BHFinderBehaviour.h" />
+    <ClInclude Include="BinomialHeap.h" />
+    <ClInclude Include="BinomialTree.h" />
     <ClInclude Include="BlackRedTree.h" />
     <ClInclude Include="FastMedianFinderBehaviour.h" />
     <ClInclude Include="MedianFinderBehaviour.h" />

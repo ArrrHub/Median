@@ -29,5 +29,14 @@
     <ClInclude Include="BlackRedTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BHFinderBehaviour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BinomialHeap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BinomialTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
