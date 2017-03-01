@@ -8,7 +8,7 @@ The complexity of finding a median is O(1), while the complexity of inserting O(
 while popping is O(2*log(N))
 
 ##BHFinderBehaviour
-Same as, STLPrioQFinderBehaviour, except it's based on the implementation of STLPrioQFinderBehaviour
+Same as, STLPrioQFinderBehaviour, except it's based on the implementation of my own Priority Queue.
 
 ##FastMedianFinderBehaviour
 Based on the implementation of 2 black red trees (self balancing). The complexity of finding the
