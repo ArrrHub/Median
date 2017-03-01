@@ -16,7 +16,7 @@ int main()
 
 	for (auto v : inputData)
 	{
-		finder.insert(v);
+		f2.insert(v);
 		int a = 4;
 	}
 

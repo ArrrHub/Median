@@ -1,12 +1,3 @@
 ﻿  main.cpp
-c:\users\dat\desktop\median\median\median\binomialtree.h(14): error C2143: syntax error: missing ';' before '<'
-  c:\users\dat\desktop\median\median\median\binomialtree.h(44): note: see reference to class template instantiation 'BinomialTree<T>' being compiled
-c:\users\dat\desktop\median\median\median\binomialtree.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\dat\desktop\median\median\median\binomialtree.h(14): error C2238: unexpected token(s) preceding ';'
-c:\users\dat\desktop\median\median\median\binomialtree.h(64): error C2988: unrecognizable template declaration/definition
-c:\users\dat\desktop\median\median\median\binomialtree.h(64): error C2143: syntax error: missing ';' before '<'
-c:\users\dat\desktop\median\median\median\binomialtree.h(64): error C2059: syntax error: '<'
-c:\users\dat\desktop\median\median\median\binomialtree.h(64): error C2065: 'T': undeclared identifier
-c:\users\dat\desktop\median\median\median\binomialtree.h(64): error C2923: 'BinomialTree': 'T' is not a valid template type argument for parameter 'T'
-c:\program files (x86)\microsoft visual studio 14.0\vc\include\list(15): error C2143: syntax error: missing ';' before '{'
-c:\program files (x86)\microsoft visual studio 14.0\vc\include\list(15): error C2447: '{': missing function header (old-style formal list?)
+  Median.vcxproj -> C:\Users\ext00047\Desktop\Median\Median\x64\Debug\Median.exe
+  Median.vcxproj -> C:\Users\ext00047\Desktop\Median\Median\x64\Debug\Median.pdb (Partial PDB)

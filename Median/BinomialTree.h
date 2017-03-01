@@ -1,17 +1,20 @@
 #pragma once
 #include <memory>
 
-template <class T> class BinomialTree
+template <class T> class BinomialTree : public std::enable_shared_from_this<BinomialTree<T>>
 {
 public:
 	class Node;
 
-	BinomialTree(T val) : order(0), root(new Node(null, val))
+	BinomialTree(T val) : order(0), root(new Node(nullptr, val))
 	{
 
 	}
 
-	shared_ptr<BinomialTree<T>> merge(shared_ptr<BinomialTree<T>> tree);
+	template <typename T>
+	using TreePtr = std::shared_ptr<BinomialTree<T>>;
+
+	TreePtr<T> merge(TreePtr<T> tree);
 	void joinMinTree(BinomialTree<T>& minTree, BinomialTree<T>& other);
 	std::shared_ptr<Node> getRoot();
 	int& getOrder();
@@ -23,7 +26,7 @@ public:
 		{
 		}
 
-		Node(std::shared_ptr<Node> par, T val) : left(0), right(0), parent(par), value(val)
+		Node(std::shared_ptr<Node> par, T val) : child(0), right(0), parent(par), value(val)
 		{
 		}
 
@@ -61,16 +64,16 @@ template <class T> void BinomialTree<T>::joinMinTree(BinomialTree<T>& minTree, B
 	minTree.getOrder()++;
 }
 
-template <class T> shared_ptr<BinomialTree<T>> BinomialTree<T>::merge(shared_ptr<BinomialTree<T>> tree)
+template <typename T> std::shared_ptr<BinomialTree<T>> BinomialTree<T>::merge(std::shared_ptr<BinomialTree<T>> tree)
 {
-	if (root->value <= tree->getRoot())
+	if (root->getValue() <= tree->getRoot()->getValue())
 	{
-		joinMinTree(this, tree);
-		return this;
+		joinMinTree(*this, *tree);
+		return shared_from_this();
 	}
 	else
 	{
-		joinMinTree(tree, this);
+		joinMinTree(*tree, *this);
 		return tree;
 	}
 }
