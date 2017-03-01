@@ -11,7 +11,7 @@ public:
 	}
 
 	void insert(dataType element);
-	dataType  getMedian();
+	double  getMedian();
 
 private:
 	BlackRedTree::BRTree<dataType> tree;
@@ -22,8 +22,8 @@ template<class dataType> void FastMedianFinderBehaviour<dataType>::insert(dataTy
 
 }
 
-template<class dataType> dataType FastMedianFinderBehaviour<dataType>::getMedian()
+template<class dataType> double FastMedianFinderBehaviour<dataType>::getMedian()
 {
-	dataType a = 0;
+	double a = 0;
 	return a;
 }

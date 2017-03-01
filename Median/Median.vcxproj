@@ -119,6 +119,7 @@
     <ClInclude Include="BlackRedTree.h" />
     <ClInclude Include="FastMedianFinderBehaviour.h" />
     <ClInclude Include="MedianFinderBehaviour.h" />
+    <ClInclude Include="STLPrioQFinderBehaviour.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

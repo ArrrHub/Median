@@ -22,7 +22,7 @@ public:
 	class Node
 	{
 	public:
-		Node() : child(0), right(0), parent(0), col(Red), value(0)
+		Node() : child(0), right(0), parent(0), value(0)
 		{
 		}
 

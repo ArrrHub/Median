@@ -14,7 +14,7 @@ public:
 	}
 	 
 	void insert(T data);
-	T  getMedian();
+	double  getMedian();
 private:
 	BinomialHeap<T> heap;
 };
@@ -24,8 +24,8 @@ template<class T>  void BHFinderBehaviour<T>::insert(T data)
 	heap.insert(data);
 }
 
-template<class T>  T BHFinderBehaviour<T>::getMedian()
+template<class T>  double BHFinderBehaviour<T>::getMedian()
 {
-	T returnValue = 0;
+	double returnValue = 0;
 	return returnValue;
 }

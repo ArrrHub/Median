@@ -1,7 +1,7 @@
 #include <iostream>
-#include <map>
 #include "FastMedianFinderBehaviour.h"
 #include "BHFinderBehaviour.h"
+#include "STLPrioQFinderBehaviour.h"
 #include <vector>
 
 using namespace std;
@@ -9,15 +9,14 @@ using namespace std;
 
 int main()
 {
-	FastMedianFinderBehaviour<int> finder;
-	BHFinderBehaviour<int> f2;
+	STLPrioQFinderBehaviour<int> stlPrioQueue;
 
 	vector<int> inputData= { 6,3,1,2,5,4,7};
 
 	for (auto v : inputData)
 	{
-		f2.insert(v);
-		int a = 4;
+		stlPrioQueue.insert(v);
+		cout << stlPrioQueue.getMedian() << endl;
 	}
-
+	return 0;
 }
